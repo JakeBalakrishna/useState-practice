@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
-
 import './style.css'
-
+import './images/FallingNugget3-1.jpg'
 
 export default function About() {
     const [count, setCount] = useState(0);
@@ -13,8 +12,9 @@ export default function About() {
     
     return(
     <>   
+
         <div>
-        <img src="../images/1nug.jpg" className='avatar' alt='nugget'/>
+        <img src={require('./images/FallingNugget3-1.jpg')} className='avatar' alt='A sinlge chicken nugget' />
         </div>
         
         <div className="nug-counter">
